@@ -1,0 +1,356 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Oswald';
+    display: block;
+}
+
+a {
+    color: indianred;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover, a:focus {
+    color: white;
+}
+
+head {
+    display: none;
+}
+
+html {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 10px;
+}
+
+header {
+    background-image: url(../img/cover.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: black;
+}
+
+/*************Down Arrow Bounce**************/
+
+.glyphicon-menu-down {
+    font-size: 40px;
+}
+
+.glyphicon-menu-down:hover,
+.glyphicon-menu-down:focus {
+    color: white;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/***********Mobile Navigation************/
+
+.navbar-default .navbar-toggle .icon-bar /**icon-bar makes work**/{
+  background-color: indianred; /* Changes regular toggle color */
+}
+.navbar-default .navbar-toggle .icon-bar:hover {
+  background-color: #fff; /* Changes toggle color on hover */
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: black;
+    font-family: 'Oswald';
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+    /***Logo Color**/
+.navbar-default .navbar-header .navbar-brand {
+    font-weight: 700;
+    color: indianred;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: white;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: indianred;
+    background-color: black;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: white;
+}
+/****two lines deleted below if acting weird****/
+
+
+/***********Navigation Full Screen************/
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: transparent;
+        background-color: black;
+    }
+
+    /***changes color of brand on left side**/
+    .navbar-default .navbar-header .navbar-brand {
+        color: indianred;
+    }
+
+
+/*****Nav Bar Hover Color****/
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: white;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: indianred;
+        background-color: transparent;
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: white;
+    }
+
+
+    /****Scroll, hightlight different menu items***/
+    .navbar-default.affix {
+        background-color: white;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #f05f40;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #eb3812;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #f05f40;
+    }
+}
+
+/***********Header Content************/
+header {
+    position: relative;
+    color: white;
+    min-height: auto;
+    height: 100%;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+    color: white;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+/***********Project Brief Header Section************/
+
+.project-brief {
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    margin-top: 35px;
+    color: white;
+}
+
+/***********Project Brief Description Section************/
+
+
+.project-brief-descript {
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+}
+
+/***********Coding Icons************/
+
+.coding-icons {
+  width: 7%;
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 35px;
+    -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+@media(max-width: 700px){
+    .coding-icons {
+        width: 15%;
+    }
+}
+
+@media(max-width: 900px){
+    .coding-icons {
+        width: 11%;
+    }
+}
+
+
+
+
+  .coding-icons:hover, .coding-icons:active, .coding-icons:focus {
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15); }
+
+
+/***********Project Brief Button************/
+
+
+.brief-button{
+    margin-top: 35px;
+    color: black;
+    background-color: white;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 35px;
+}
+
+/***********Projects Section:1/Overall************/
+
+.panel {
+    background-color: black;
+    margin-bottom: -2px;
+}
+
+.panel2 {
+    background-color: #050505;
+    margin-bottom: -2px;
+}
+
+.project-header {
+    color: white;
+}
+
+.project-title {
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+.project-title > a {
+    color: white;
+}
+
+.project-title > a:hover,
+.project-title > a:focus{
+    color: indianred;
+    text-decoration: none;
+}
+
+.project-image {
+    width: 100%;
+    margin: auto;
+}
+
+
+/***********Projects Section:2************/
+
+.section-seperator {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/***********Footer************/
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.insta {
+    margin-right: 25px;
+
+}
+
+.git {
+    background-color: white;
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

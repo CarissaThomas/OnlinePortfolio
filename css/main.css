@@ -82,7 +82,7 @@ header {
 
 /***********Mobile Navigation************/
 
-.navbar-default .navbar-toggle .icon-bar/**icon-bar makes work**/ {
+.navbar-default .navbar-toggle .icon-bar /**icon-bar makes work**/{
   background-color: indianred; /* Changes regular toggle color */
 }
 .navbar-default .navbar-toggle .icon-bar:hover {
@@ -299,19 +299,30 @@ header .header-content .header-content-inner hr {
 
 footer {
     background-color: black;
-    text-align: center;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
-.insta {
-    margin-right: 25px;
-
+.footer-icons {
+    list-style: none;
+    text-align: center;
+}
+@media(min-width: 420px) {
+.footer-icons > li {
+    display: inline;
+    padding-right: 8%;
+    }
 }
 
+.footer-icons > li {
+    display: inline;
+    padding-right: 4%;
+}
+
+
 .git {
-    background-color: white;
-    margin-left: 25px;
+   background-color: white;
+    padding-bottom: 5px;
 }
 
 

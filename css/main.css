@@ -82,7 +82,7 @@ header {
 
 /***********Mobile Navigation************/
 
-.navbar-default .navbar-toggle .icon-bar /**icon-bar makes work**/{
+.navbar-default .navbar-toggle .icon-bar/**icon-bar makes work**/ {
   background-color: indianred; /* Changes regular toggle color */
 }
 .navbar-default .navbar-toggle .icon-bar:hover {
@@ -117,10 +117,7 @@ header {
     background-color: black;
 }
 
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
-    color: white;
-}
+
 /****two lines deleted below if acting weird****/
 
 
@@ -131,56 +128,40 @@ header {
         border-color: transparent;
         background-color: black;
     }
-
+}
     /***changes color of brand on left side**/
     .navbar-default .navbar-header .navbar-brand {
         color: indianred;
     }
 
 
-/*****Nav Bar Hover Color****/
-    .navbar-default .navbar-header .navbar-brand:hover,
-    .navbar-default .navbar-header .navbar-brand:focus {
-        color: white;
+
+/*******JS Scroll Functionality*******/
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    background-color: black;
+    color: white;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        background-color: black;
     }
+
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
         color: indianred;
-        background-color: transparent;
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: white;
-    }
-
-
-    /****Scroll, hightlight different menu items***/
-    .navbar-default.affix {
-        background-color: white;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
-        color: #f05f40;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
-    }
-
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: #222;
-    }
-
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #fff;
     }
 }
+
+
 
 /***********Header Content************/
 header {
